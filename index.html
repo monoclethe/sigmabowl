@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigmabowl 1.00</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/sbicon.png">
+</head>
+<body>
+    <div class="gameContainer">
+        <div class="timerBG" id="timerBG">
+            <div class="timerDisp" id="timerDisp">7.5</div>
+            <div class="timerFill" id="timerFill"></div>
+        </div>
+        <div class="flexContainer">
+        <div class="playArea" id="playArea">
+            <div class="actionBar" id="actionBar">
+                <button type="button" class="playPause" id="playPause"><img src="images/play.png" id="playPauseIcon"></button>
+                <button type="button" class="skip" id="skip"><img src="images/skip.png" id="skipIcon"></button>
+                <button type="button" class="buzzSubmit" id="buzzSubmit"><img src="images/buzz.png" id="buzzSubmitIcon"></button>
+                <input readonly type="text" class="playerGuess" id="playerGuess" value="Press buzz or space to buzz.">
+            </div>
+            <div class="readArea" id="readArea">
+                <div class="questionInfo" id="questionInfo">Press play or "p" to start.</div>
+                <div class="questionText" id="questionText">Press play or "p" to start.</div>
+            </div>
+        </div>
+        <div class="statsSettingsArea" id="statsSettingsArea">
+            <div class="stats" id="stats">Stats<br><span style="color: blue">0</span>/<span style="color: red">0</span>/<span style="color: green">0</span><br>0 pts</div>
+            <div class="settings" id="settings">
+                Settings <br>
+                <span id="rspeed">Reading speed: 425</span><br>
+                <input type="range" min="1" max="60" value="30" id="readSpeed" onchange="updateSpeed()">
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer><div class="buzzRatBG" id="buzzRatBG">
+        <div class="buzzRatDisp" id="buzzRatDisp">50%</div>
+        <div class="buzzRatFill" id="buzzRatFill"></div>
+    </div>Made by Monocle • Updated 2/6/2024 • Build 1.00</footer>
+    <script src="index.js"></script>
+</body>
+</html>
